@@ -1,5 +1,26 @@
 {% extends "layout.html" %}
 
 {% block content %}
-//actual content
+
+<h3>Nelson's letters</h3>
+	<table>
+		<tr>
+			<th>name</th>
+			<th>Date</th>
+			<th>Place</th>
+			<th>Printed Primary Source</th>
+			<th>Manuscript Source</th>
+		</tr>
+
+	{%- for letter in letters %}
+		<tr>
+			<td>{{ letter.name }}</td>
+			<td>{{ letter.date }}</td>
+			<td>{{ letter.place }}</td>
+			<td>{{ letter.printed_primary_source }}</td>
+			<td>{{ letter.manuscript_source }}</td>
+
+		</tr>
+	{%- endfor %}
+	</table>
 {% endblock %}
