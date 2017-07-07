@@ -5,7 +5,8 @@
 <h3>Nelson's letters</h3>
 	<table>
 		<tr>
-			<th>name</th>
+			<th>Id</th>
+			<th>Name</th>
 			<th>Date</th>
 			<th>Place</th>
 			<th>Printed Primary Source</th>
@@ -14,6 +15,7 @@
 
 	{%- for letter in letters %}
 		<tr>
+			<td><a href="/letter/{{letter.id}}">{{ letter.id }}</a></td>
 			<td>{{ letter.name }}</td>
 			<td>{{ letter.date }}</td>
 			<td>{{ letter.place }}</td>

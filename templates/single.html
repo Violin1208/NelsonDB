@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h3>Single letter</h3>
+<ul>
+	<li>Date: {{ letter.date }}</li>
+    <li>Name: {{ letter.name }}</li>
+    <li>Place: {{ letter.place }}</li>
+    <li>Navy: {{ letter.navy }}</li>
+    <li>Navy Cat: {{ letter.navy_cat }}</li>
+    <li>Family: {{ letter.family }}</li>
+    <li>Friends: {{ letter.friends }}</li>
+    <li>Government: {{ letter.government }}</li>
+    <li>Whig: {{ letter.whig }}</li>
+    <li>Tory: {{ letter.tory }}</li>
+    <li>Merchants: {{ letter.merchants }}</li>
+    <li>Foreigners: {{ letter.foreigners }}</li>
+    <li>Foreigners Cat: {{ letter.foreigners_cat }}</li>
+    <li>Usefulness: {{ letter.usefulness }}</li>
+    <li>Closeness: {{ letter.closeness }}</li>
+    <li>Gov Cat: {{ letter.gov_cat }}</li>
+    <li>Printed Primary Source: {{ letter.printed_primary_source }}</li>
+    <li>Manuscript Source: {{ letter.manuscript_source }}</li>
+</ul>
+{% endblock %}
