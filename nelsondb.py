@@ -8,4 +8,4 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://nelson:debl@localhost/nels
 from views import *
  
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port="5000")
